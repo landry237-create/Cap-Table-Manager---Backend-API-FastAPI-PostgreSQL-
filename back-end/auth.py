@@ -1,5 +1,17 @@
 # auth.py
 
+"""
+✅ Explications
+
+hash_password et verify_password : pour sécuriser les mots de passe.
+
+create_access_token : génère un JWT signé pour l'utilisateur.
+
+get_current_user : vérifie le token et retourne l’utilisateur courant.
+
+OAuth2PasswordBearer : permet de passer le token via l'en-tête Authorization: Bearer.
+"""
+
 from datetime import datetime, timedelta
 from typing import Optional
 from jose import JWTError, jwt
