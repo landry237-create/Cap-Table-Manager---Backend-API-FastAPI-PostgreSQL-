@@ -1,5 +1,16 @@
 # database.py
 
+"""
+🔍 Pourquoi ?
+
+engine : moteur de connexion.
+
+SessionLocal : pour interagir avec la base dans chaque requête.
+
+Base : pour définir les modèles SQLAlchemy
+
+"""
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
