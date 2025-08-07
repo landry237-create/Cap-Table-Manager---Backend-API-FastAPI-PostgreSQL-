@@ -1,4 +1,13 @@
 # schemas.py
+
+"""
+🔍 Pourquoi ?
+
+Les schémas Pydantic sont utilisés pour valider les données entrantes 
+et formater les réponses sortantes.
+
+"""
+
 from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 from datetime import datetime
