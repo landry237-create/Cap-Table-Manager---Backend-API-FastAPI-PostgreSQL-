@@ -13,3 +13,13 @@ def log_event(db: Session, event_type: str, description: str):
     )
     db.add(event)
     db.commit()
+
+"""
+🔍 Permet de traquer toutes les actions sensibles dans le système :
+
+Création d'actionnaire
+
+Connexion
+
+Émission d’actions
+"""
