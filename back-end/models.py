@@ -1,4 +1,17 @@
 # models.py
+"""
+🔍 Pourquoi ?
+
+User : pour gérer les rôles et l’authentification.
+
+Shareholder : profil lié à un utilisateur.
+
+Issuance : représente une émission d’actions.
+
+AuditEvent : journalisation des événements critiques (bonus).
+"""
+
+
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Float
 from sqlalchemy.orm import relationship
 from database import Base
