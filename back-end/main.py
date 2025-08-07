@@ -29,6 +29,20 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     token = auth.create_access_token(data={"sub": user.email})
     return {"access_token": token, "token_type": "bearer"}
 
+
+
+"""
+✅ Explications
+
+OAuth2PasswordRequestForm permet de soumettre username et password (le champ username correspond à l’email ici).
+
+Le JWT est généré si l’utilisateur est valide.
+
+Cette route est celle qui alimente le frontend pour l’authentification (POST /api/token/).
+
+
+"""
+
 # ... suite de main.py ...
 
 from fastapi.responses import StreamingResponse
