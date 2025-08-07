@@ -7,3 +7,11 @@ def send_email(subject: str, recipient: str):
     print(f"Sujet : {subject}")
     print("Contenu : Cet email est une simulation de notification.")
     print("-" * 50)
+
+"""
+🔍 Pourquoi simuler ?
+
+Répond à la contrainte du test : pas besoin de serveur SMTP réel.
+
+Facilement remplaçable par un vrai système (SMTP, SendGrid, Mailjet…).
+"""
