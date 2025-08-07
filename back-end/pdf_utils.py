@@ -1,5 +1,13 @@
 # pdf_utils.py
 
+"""
+🔍 Pourquoi ReportLab ?
+
+Très robuste, sans dépendances complexes.
+
+Permet la création de PDF à la volée, avec textes, images, filigrane, etc.
+"""
+
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from io import BytesIO
